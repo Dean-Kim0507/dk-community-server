@@ -1,4 +1,4 @@
-# Awesome Project Build with TypeORM
+# Backend Refactoring: Migrating to Hexagonal Architecture
 
 Steps to run this project:
 
