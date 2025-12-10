@@ -2,11 +2,9 @@
 
 This backend is being refactored from a layered layout into a hexagonal architecture that separates domain, application, and infrastructure concerns.
 
-## Why refactor instead of rebuilding from scratch
+Most software development involves improving existing systems. Refactoring lets us keep proven features, find improvements, and modernize the codebase, all while preserving what already works.
 
-Most of a software developer’s work involves improving and maintaining existing systems, rather than building everything from scratch. Refactoring the current codebase allows us to keep proven features while giving us insight into where optimizations and enhancements are possible. This process helps developers better understand the software and spot areas for improvement, all while maintaining functional parity and gradually establishing better architectural boundaries. The aim is to modernize and evolve the code, leveraging what already works rather than throwing away valuable, battle-tested logic.
-
-## Problems
+## Problems of Old Codebase
 
 - **Tight coupling:** Business logic, data access, and HTTP handling are all intermixed, making it difficult to separate concerns or adjust one without impacting the others.
 - **Impure domain:** The domain layer depends on external modules—any change to infrastructure (e.g., switching from SQL to NoSQL) forces changes throughout the domain logic.
