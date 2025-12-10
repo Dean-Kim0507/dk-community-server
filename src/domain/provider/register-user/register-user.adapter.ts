@@ -13,7 +13,7 @@ export class RegisterUserProviderAdapter implements RegisterUserProviderPort {
         private readonly userRepository: UserRepositoryPort
     ) {}
 
-    public async register(user: User): Promise<RegisterUserResult> {    
+    public async register(user: User): Promise<RegisterUserResult> {
         const isDuplicated = await this.duplicationCheck(user);
     
         if (isDuplicated) {
